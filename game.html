@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinosaur Game linna</title>
+  <style>
+    * {
+      margin: 0; 
+      padding: 0;
+    }
+    canvas {
+      border: 2px solid rgb(131, 35, 35);
+      background-color: rgb(93, 193, 240);
+    }
+    .parent-container {
+      display: flex;
+      justify-content: center;
+    }
+    #starting-container {
+      position: absolute;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+    h2 {
+      text-align: center;
+    }
+    input {
+      margin: 20px 0;
+      padding: 10px;
+      height: 30px;
+    }
+    button {
+      height: 30px;
+    }
+  
+
+  </style>
+</head>
+<body>
+  <div class="parent-container">
+    <canvas id="canvas"></canvas>
+    <div id="starting-container">
+      <h2>Player Name</h2>
+      <input type="text" id="player_name" />
+      <button onclick="game.start()">Start Game</button>
+    </div>
+  </div>
+
+ 
+  
+  
+  <script src="./assets/classes/Game.js"></script>
+  <script src="./assets/classes/Dinosaur.js"></script>
+  <script src="./assets/classes/Bird.js"></script>
+  <script src="./assets/classes/Road.js"></script>
+  <script src="./assets/classes/Cloud.js"></script>
+  <script src="./assets/game.js"></script>
+</body>
+</html>
